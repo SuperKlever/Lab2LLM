@@ -1,0 +1,28 @@
+[project]
+name = "lab2llm"
+version = "0.1.2"
+description = ""
+authors = [
+    {name = "SuperKlever",email = "selik.2@mail.ru"}
+]
+readme = "README.md"
+requires-python = ">=3.13,<3.15"
+
+[tool.poetry.dependencies]
+python = ">=3.13,<3.15"
+openai = "*"
+langchain = "*"
+langchain-openai = "*"
+langgraph = "*"
+pydantic = "*"
+python-dotenv = "*"
+tqdm = "*"
+ipykernel = "*"
+ipywidgets = "*"
+
+[[tool.poetry.packages]]
+include = "src"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
