@@ -24,4 +24,7 @@ def lookup(topic: str) -> str:
             print(f"[TOOL] lookup called with topic: {topic} and answer is {value}")
             return value
     print(f"[TOOL] lookup called with topic: {topic} and answer is No context")
-    return "No context"
+    return (
+        "No direct definition found in the knowledge base. "
+        "Provide a general explanation using your own knowledge."
+    )

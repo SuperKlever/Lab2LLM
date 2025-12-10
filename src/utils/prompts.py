@@ -31,6 +31,8 @@ EXPLANATION_PROMPT = ChatPromptTemplate.from_messages(
             "to look it up.\n\n"
             "Do not solve numerical problems or perform calculations. "
             "Return the answer strictly in the required structured format."
+            "If a tool does not return useful information, ignore the tool result and answer the question using your own general knowledge."
+
         ),
         ("human", "{question}"),
     ]
@@ -49,6 +51,7 @@ PROBLEM_SOLVING_PROMPT = ChatPromptTemplate.from_messages(
             "Do not guess numeric results.\n\n"
             "Do not provide theoretical explanations unless necessary for understanding "
             "the solution. Return the result in the required structured format."
+            "If a tool does not return useful information, ignore the tool result and answer the question using your own general knowledge."
         ),
         ("human", "{question}"),
     ]
