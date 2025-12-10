@@ -180,3 +180,4 @@ cython_debug/
 .cursorignore
 .cursorindexingignore
 Лабораторная работа 2_ Проектирование и реализация мультиагентной системы с использованием LangChain и LangGraph.pdf
+/.vscode
