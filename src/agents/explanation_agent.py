@@ -11,7 +11,6 @@ from src.graph.state import ConversationState, ExplanationAgentAnswer
 from src.tools.knowledge_tool import lookup
 from src.utils.prompts import EXPLANATION_PROMPT
 
-
 @dataclass
 class ExplanationAgent:
     def __init__(self) -> None:

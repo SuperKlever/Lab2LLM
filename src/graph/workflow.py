@@ -5,7 +5,6 @@ from src.agents.problem_solving_agent import ProblemSolvingAgent
 from src.agents.router_agent import RouterAgent
 from src.graph.state import ConversationState
 
-
 def build_workflow() -> StateGraph:
     """Create a LangGraph workflow connecting router and specialized agents."""
 

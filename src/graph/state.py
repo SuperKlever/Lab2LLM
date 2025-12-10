@@ -1,6 +1,5 @@
 from typing import List, Literal, Optional, TypedDict
 
-
 class ConversationState(TypedDict, total=False):
     question: str
     intent: Literal["explanation", "problem_solving", "unknown"]
@@ -8,7 +7,6 @@ class ConversationState(TypedDict, total=False):
     level: Optional[str]
     history: List[str]
     answer: Optional[str]
-
 
 def default_state() -> ConversationState:
     """Return an empty state with sensible defaults."""

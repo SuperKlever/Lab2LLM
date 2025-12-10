@@ -4,7 +4,6 @@ from typing import Any, Dict
 from src.graph.workflow import build_workflow
 from src.memory.session_memory import SessionMemory
 
-
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Учебный ассистент (LangGraph).")
     parser.add_argument(
@@ -13,7 +12,6 @@ def parse_args() -> argparse.Namespace:
         help="Показывать промежуточные состояния графа.",
     )
     return parser.parse_args()
-
 
 def main() -> None:
     """CLI loop to demo the LangGraph multi-agent system."""
@@ -48,7 +46,6 @@ def main() -> None:
 
         answer = result.get("answer") or "Нет ответа."
         print(answer)
-
 
 if __name__ == "__main__":
     main()

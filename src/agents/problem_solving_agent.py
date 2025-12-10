@@ -12,7 +12,6 @@ from src.graph.state import ConversationState, ProblemSolvingAgentAnswer
 from src.tools.calculator_tool import calculator
 from src.utils.prompts import PROBLEM_SOLVING_PROMPT
 
-
 @dataclass
 class ProblemSolvingAgent:
     def __init__(self) -> None:
